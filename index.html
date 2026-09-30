@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For My Future Wife ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         MUSIC
+    ====================================================== -->
+
+    <audio id="backgroundMusic" loop>
+        <source src="music/backsound.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="musicButton" class="music-button" onclick="toggleMusic()">
+        🎵
+    </button>
+
+
+    <!-- =====================================================
+         FLOATING HEARTS
+    ====================================================== -->
+
+    <div id="hearts"></div>
+
+
+    <!-- =====================================================
+         PAGE 1 - OPENING
+    ====================================================== -->
+
+    <section id="opening" class="page active">
+
+        <div class="opening-content">
+
+            <div class="small-text">
+                A little surprise for you...
+            </div>
+
+            <div class="envelope" onclick="openEnvelope()">
+
+                <div class="envelope-back"></div>
+
+                <div class="letter-paper">
+                    <span>For You ❤️</span>
+                </div>
+
+                <div class="envelope-flap"></div>
+
+            </div>
+
+            <h1>Press the Envelope</h1>
+
+            <p>
+                Ada sesuatu yang Mas buat khusus untuk calon istriku.
+            </p>
+
+            <button class="main-button" onclick="openEnvelope()">
+                Buka Surat 💌
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PAGE 2 - BIRTHDAY
+    ====================================================== -->
+
+    <section id="birthday" class="page">
+
+        <div class="content">
+
+            <div class="eyebrow">
+                TODAY IS YOUR SPECIAL DAY
+            </div>
+
+            <h1>
+                Happy 24th<br>
+                Birthday ❤️
+            </h1>
+
+            <p class="subtitle">
+                Untuk Aisyah Rizta Oktaviana,
+                calon istriku.
+            </p>
+
+            <img
+                src="photos/foto1.jpg"
+                class="main-photo"
+                alt="Foto kita">
+
+            <p class="message">
+                Selamat ulang tahun ke-24.
+                Semoga hari ini menjadi salah satu
+                hari yang selalu adek ingat.
+            </p>
+
+            <button class="main-button" onclick="goTo('memories')">
+                Continue →
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PAGE 3 - MEMORIES
+    ====================================================== -->
+
+    <section id="memories" class="page">
+
+        <div class="content wide">
+
+            <div class="eyebrow">
+                OUR LITTLE MEMORIES
+            </div>
+
+            <h1>
+                Our Memories 📸
+            </h1>
+
+            <p class="subtitle">
+                Beberapa potongan kecil dari perjalanan
+                yang akhirnya membawa kita sampai ke sini.
+            </p>
+
+
+            <div class="photo-grid">
+
+                <div class="photo-card rotate-left">
+                    <img src="photos/foto2.jpg">
+                    <span>One of my favorite memories ❤️</span>
+                </div>
+
+                <div class="photo-card rotate-right">
+                    <img src="photos/foto3.jpg">
+                    <span>A moment I'll always remember</span>
+                </div>
+
+                <div class="photo-card rotate-left">
+                    <img src="photos/foto4.jpg">
+                    <span>Us ❤️</span>
+                </div>
+
+                <div class="photo-card rotate-right">
+                    <img src="photos/foto5.jpg">
+                    <span>The beginning of forever</span>
+                </div>
+
+            </div>
+
+
+            <button class="main-button" onclick="goTo('story')">
+                Our Story →
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PAGE 4 - OUR STORY
+    ====================================================== -->
+
+    <section id="story" class="page">
+
+        <div class="content">
+
+            <div class="eyebrow">
+                OUR STORY
+            </div>
+
+            <h1>
+                Dari Awal<br>
+                yang Tidak Direncanakan
+            </h1>
+
+            <div class="story-box">
+
+                <p>
+                    Kalau aku melihat kembali perjalanan kita,
+                    semuanya sebenarnya dimulai dari sesuatu
+                    yang tidak pernah kita rencanakan.
+                </p>
+
+                <p>
+                    Tidak pernah menyangka bahwa seseorang
+                    yang awalnya datang begitu saja,
+                    akhirnya menjadi seseorang yang sangat
+                    berarti dalam hidup mas.
+                </p>
+
+                <p>
+                    Hari demi hari kita lewati.
+                    Ada bahagia, ada sedih,
+                    ada salah paham, ada tawa,
+                    dan ada banyak hal yang membuat kita
+                    semakin mengenal satu sama lain.
+                </p>
+
+                <p>
+                    Sampai akhirnya kita berada di titik
+                    yang dulu mungkin tidak pernah kita
+                    bayangkan.
+                </p>
+
+                <div class="highlight">
+                    Dari sesuatu yang tidak direncanakan...
+                    <br>
+                    sampai sekarang sudah di tahap lamaran. 💍
+                </div>
+
+                <p>
+                    Dan Mas berharap perjalanan ini
+                    bukan menjadi akhir dari sebuah cerita,
+                    tetapi awal dari kehidupan yang jauh
+                    lebih panjang bersama.
+                </p>
+
+            </div>
+
+            <button class="main-button" onclick="goTo('ldr')">
+                Continue ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PAGE 5 - LDR
+    ====================================================== -->
+
+    <section id="ldr" class="page">
+
+        <div class="content wide">
+
+            <div class="eyebrow">
+                RIGHT NOW
+            </div>
+
+            <h1>
+                Beda Jarak,<br>
+                Tetap Satu Tujuan 🌏
+            </h1>
+
+            <p class="subtitle">
+                Bali ↔ Rumah calon istriku
+            </p>
+
+
+            <div class="distance-box">
+
+                <div class="person">
+
+                    <div class="location-icon">
+                        📍
+                    </div>
+
+                    <h2>Mas</h2>
+
+                    <p>
+                        Bali
+                    </p>
+
+                </div>
+
+
+                <div class="distance-line">
+
+                    <span class="plane">
+                        ✈️
+                    </span>
+
+                    <div class="line"></div>
+
+                    <span class="heart-middle">
+                        ❤️
+                    </span>
+
+                </div>
+
+
+                <div class="person">
+
+                    <div class="location-icon">
+                        📍
+                    </div>
+
+                    <h2>Calon Istriku</h2>
+
+                    <p>
+                        Rumah
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="ldr-message">
+
+                <p>
+                    Sekarang kita sedang berada di tempat
+                    yang berbeda.
+                </p>
+
+                <p>
+                    Beda pulau, beda waktu,
+                    dan mungkin ada hari-hari ketika
+                    rasa kangen terasa lebih berat
+                    dari biasanya.
+                </p>
+
+                <p>
+                    Tidak bisa setiap saat ketemu.
+                    Tidak bisa tiba-tiba datang ketika
+                    salah satu dari kita sedang ingin
+                    ditemani.
+                </p>
+
+                <p>
+                    Kadang cuma bisa saling menunggu
+                    kabar, menunggu telepon,
+                    atau sekadar melihat nama satu sama
+                    lain muncul di layar handphone.
+                </p>
+
+                <div class="ldr-highlight">
+                    Tapi Mas ingin calon istriku tahu
+                    satu hal.
+                    <br><br>
+
+                    <strong>
+                        Jarak tidak pernah mengubah
+                        tujuan Mas.
+                    </strong>
+                </div>
+
+                <p>
+                    Suatu hari nanti, semoga tidak ada lagi
+                    hitungan kilometer di antara kita.
+                </p>
+
+                <p>
+                    Tidak ada lagi menghitung perbedaan waktu.
+                    Tidak ada lagi berkata,
+                    "Kapan kita bisa ketemu?"
+                </p>
+
+                <p>
+                    Karena nanti kita akan tinggal
+                    di tempat yang sama,
+                    pulang ke rumah yang sama,
+                    dan menjalani hari-hari bersama.
+                </p>
+
+                <p>
+                    Sampai hari itu tiba,
+                    mari kita tetap saling percaya,
+                    saling cerita,
+                    saling menunggu,
+                    dan tetap saling memilih.
+                </p>
+
+                <div class="final-ldr">
+                    Karena sejauh apa pun jaraknya sekarang...
+                    <br><br>
+                    <strong>
+                        Mas tetap memilih adek. ❤️
+                    </strong>
+                </div>
+
+            </div>
+
+
+            <button class="main-button" onclick="goTo('letter')">
+                Ada Surat Untukmu 💌
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PAGE 6 - LETTER
+    ====================================================== -->
+
+    <section id="letter" class="page">
+
+        <div class="content">
+
+            <div class="eyebrow">
+                A LETTER FOR YOU
+            </div>
+
+            <h1>
+                Untuk Aisyah Rizta Oktaviaba 💌
+            </h1>
+
+
+            <div class="letter-box">
+
+                <p>
+                    Untuk calon istriku,
+                </p>
+
+                <p>
+                    Selamat ulang tahun yang ke-24.
+                </p>
+
+                <p>
+                    Mas mungkin tidak selalu pandai
+                    menyampaikan semuanya lewat kata-kata,
+                    tetapi ada banyak hal yang ingin
+                    Mas sampaikan hari ini.
+                </p>
+
+                <p>
+                    Terima kasih karena sudah menjadi bagian
+                    dari perjalanan hidup Mas.
+                </p>
+
+                <p>
+                    Terima kasih sudah bertahan bersama Mas
+                    melewati banyak hal.
+                </p>
+
+                <p>
+                    Dari awal yang tidak direncanakan,
+                    sampai akhirnya kita berada di tahap
+                    lamaran.
+                </p>
+
+                <p>
+                    Mas tidak tahu semua hal yang akan
+                    terjadi di masa depan.
+                </p>
+
+                <p>
+                    Tetapi Mas tahu bahwa Mas ingin
+                    menghadapi masa depan itu bersama
+                    calon istriku.
+                </p>
+
+                <p>
+                    Semoga kita bisa terus tumbuh,
+                    saling mendukung,
+                    dan saling menguatkan.
+                </p>
+
+                <p>
+                    Sampai akhirnya semua rencana yang
+                    sekarang masih menjadi harapan,
+                    benar-benar menjadi kenyataan.
+                </p>
+
+                <div class="signature">
+
+                    Selamat ulang tahun,
+                    calon istriku. ❤️
+
+                    <br><br>
+
+                    — Calon Suamimu
+
+                </div>
+
+            </div>
+
+
+            <button class="main-button" onclick="goTo('song')">
+                Play Our Song 🎵
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PAGE 7 - SONG
+    ====================================================== -->
+
+    <section id="song" class="page">
+
+        <div class="content">
+
+            <div class="eyebrow">
+                A SONG FOR US
+            </div>
+
+            <div class="vinyl">
+                <div class="vinyl-center">
+                    ❤️
+                </div>
+            </div>
+
+            <h1>
+                Our Little Song 🎵
+            </h1>
+
+            <p class="subtitle">
+                Putar musiknya dan nikmati sebentar
+                perjalanan kecil kita.
+            </p>
+
+            <button class="main-button" onclick="toggleMusic()">
+                ▶ Play / Pause
+            </button>
+
+            <button class="text-button" onclick="goTo('surprise')">
+                Continue to the surprise →
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PAGE 8 - CHOOSE SURPRISE
+    ====================================================== -->
+
+    <section id="surprise" class="page">
+
+        <div class="content wide">
+
+            <div class="eyebrow">
+                A LITTLE SURPRISE
+            </div>
+
+            <h1>
+                Choose Your Surprise 🎁
+            </h1>
+
+            <p class="subtitle">
+                Pilih satu per satu.
+                Ada sesuatu di dalam setiap pilihan.
+            </p>
+
+
+            <div class="surprise-grid">
+
+                <button
+                    class="surprise-card"
+                    onclick="showSurprise('memory')">
+
+                    <span>📸</span>
+
+                    <strong>
+                        Our Memories
+                    </strong>
+
+                    <small>
+                        Lihat satu kenangan lagi
+                    </small>
+
+                </button>
+
+
+                <button
+                    class="surprise-card"
+                    onclick="showSurprise('letter')">
+
+                    <span>💌</span>
+
+                    <strong>
+                        One More Letter
+                    </strong>
+
+                    <small>
+                        Ada satu pesan lagi
+                    </small>
+
+                </button>
+
+
+                <button
+                    class="surprise-card"
+                    onclick="showSurprise('wish')">
+
+                    <span>✨</span>
+
+                    <strong>
+                        Make a Wish
+                    </strong>
+
+                    <small>
+                        Tulis harapanmu
+                    </small>
+
+                </button>
+
+
+                <button
+                    class="surprise-card"
+                    onclick="showSurprise('future')">
+
+                    <span>💍</span>
+
+                    <strong>
+                        Our Future
+                    </strong>
+
+                    <small>
+                        Untuk masa depan kita
+                    </small>
+
+                </button>
+
+            </div>
+
+
+            <div id="surpriseResult" class="surprise-result">
+
+            </div>
+
+
+            <button
+                id="lastButton"
+                class="main-button hidden"
+                onclick="goTo('ending')">
+
+                One Last Surprise ❤️
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PAGE 9 - WISH
+    ====================================================== -->
+
+    <section id="wish" class="page">
+
+        <div class="content">
+
+            <div class="eyebrow">
+                MAKE A WISH ✨
+            </div>
+
+            <h1>
+                Satu Harapan dari Calon Istriku
+            </h1>
+
+            <p class="subtitle">
+                Tulis satu harapan yang ingin calon istriku
+                wujudkan bersama Mas.
+            </p>
+
+
+            <textarea
+                id="wishInput"
+                placeholder="Tulis harapanmu di sini...">
+            </textarea>
+
+
+            <button class="main-button" onclick="saveWish()">
+                Simpan Harapanku ❤️
+            </button>
+
+
+            <div id="wishResult"></div>
+
+
+            <button
+                class="text-button"
+                onclick="goTo('surprise')">
+
+                ← Kembali
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PAGE 10 - ENDING
+    ====================================================== -->
+
+    <section id="ending" class="page">
+
+        <div class="content">
+
+            <div class="eyebrow">
+                ONE LAST THING
+            </div>
+
+
+            <img
+                src="photos/foto6.jpg"
+                class="ending-photo"
+                alt="Our photo">
+
+
+            <h1>
+                From Now<br>
+                Until Forever
+            </h1>
+
+
+            <div class="ending-text">
+
+                <p>
+                    Dari awal yang tidak direncanakan...
+                </p>
+
+                <p>
+                    sampai sekarang sudah di tahap lamaran.
+                </p>
+
+                <p>
+                    Dari sekadar dua orang yang bertemu...
+                    sampai menjadi dua orang yang
+                    merencanakan masa depan bersama.
+                </p>
+
+                <p>
+                    Mungkin perjalanan kita belum selesai.
+                </p>
+
+                <p>
+                    Justru sebenarnya,
+                    perjalanan yang paling panjang
+                    baru akan dimulai.
+                </p>
+
+                <div class="forever">
+
+                    💍
+
+                    <br><br>
+
+                    Mas ingin terus berjalan
+                    bersamamu.
+
+                    <br><br>
+
+                    <strong>
+                        Selamanya Aku sayang kamu. ❤️
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="ending-hearts">
+                ❤️ ❤️ ❤️
+            </div>
+
+
+            <button class="main-button" onclick="restartWebsite()">
+                Start Again ↻
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
